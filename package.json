@@ -1,0 +1,49 @@
+{
+  "name": "babel-plugin-flow-dulcet-proptypes",
+  "version": "2.1.3",
+  "description": "converts flow types to dulcet proptypes",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint src test",
+    "test": "npm run build && jest",
+    "build": "babel src/ --out-dir lib/ --ignore src/__tests__ --presets es2015,stage-1,dulcet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanhduy1407/babel-plugin-flow-dulcet-proptypes.git"
+  },
+  "keywords": [
+    "dulcet",
+    "flow",
+    "flowtype",
+    "proptypes",
+    "babel",
+    "babel-plugin",
+    "es6"
+  ],
+  "author": "NKDuy <kn145660@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khanhduy1407/babel-plugin-flow-dulcet-proptypes/issues"
+  },
+  "homepage": "https://github.com/khanhduy1407/babel-plugin-flow-dulcet-proptypes#readme",
+  "files": [
+    "lib/*.js"
+  ],
+  "devDependencies": {
+    "@nkduy/babel-cli": "^6.22.0",
+    "@nkduy/babel-preset-es2015": "^6.22.0",
+    "@nkduy/babel-preset-stage-1": "^6.22.0",
+    "babel-eslint": "^7.1.0",
+    "babel-preset-dulcet": "^6.24.5",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "eslint": "^3.8.1",
+    "eslint-plugin-dulcet": "^7.1.0"
+  },
+  "dependencies": {
+    "@nkduy/babel-template": "^6.24.1",
+    "@nkduy/babel-traverse": "^6.24.1",
+    "@nkduy/babel-types": "^6.24.4",
+    "@nkduy/babel-core": "^6.24.1"
+  }
+}

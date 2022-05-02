@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "dulcet"
+  ],
+  "rules": {
+    "brace-style": [2, "stroustrup"],
+    "strict": 0,
+    "quotes": [2, "single"],
+    "curly": [2, "multi-line"],
+    "camelcase": 0,
+    "comma-dangle": 0,
+    "indent": [2, 2],
+    "no-use-before-define": [2, "nofunc"],
+    "no-underscore-dangle": 0,
+    "no-unused-vars": [1, {"args": "none"}],
+    "no-var": 2,
+    "new-cap": 0,
+    "prefer-const": 2,
+    "semi": 1
+  },
+  env: {
+    "browser": true,
+    "node": true
+  }
+}
